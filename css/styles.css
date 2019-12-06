@@ -279,7 +279,7 @@ button:focus,
 #contact-form {
    padding-bottom: 20px;
    padding-top: 10px;
-   display: flex;
+   display: flex; 
    flex-direction: column;
 }
 
@@ -291,4 +291,9 @@ button:focus,
 
 .standard-label {
    padding: 5px;
+}
+
+.social-media img {
+   width: 30px;
+   height: 30px;
 }
