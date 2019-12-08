@@ -229,7 +229,7 @@ img.page-header__item {
    }
 }
 
-#rect3278-9, #rect3278-9-12-2 {
+#rect3278-9, #rect3278-9-12-2 { 
    animation: 2s letter-scale 1 ease;
    transform-origin: center;
    transform-box: fill-box;
