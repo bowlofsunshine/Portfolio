@@ -1,5 +1,20 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
 
+:root {
+  --primary-color: #357b70;
+  --secondary-color: #e0b354;
+  --dark-grey: #2b2b2b;
+  --dark-cyan: #008B8B;
+  --bright-color: #CD0030;
+  --off-white: #f5ecd5;
+  --h1-font-size: 30px;
+  --h2-font-size: 24px;
+  --h3-font-size: 18px;
+  --p-font-size: 16px;
+  --h-font-weight: 700;
+  --font-weight: 400;
+}
+
 * {
    -webkit-box-sizing: border-box;
            box-sizing: border-box;
@@ -7,8 +22,8 @@
 
 body {
    font-family: 'Raleway', sans-serif;
-   font-weight: 400;
-   font-size: 16px;
+   font-weight: var(--font-weight);
+   font-size: var(--p-font-size);
    /* Sets the font size to 16px */
    line-height: 1.3;
    /* Sets the line-height to 1.6 */
@@ -17,31 +32,31 @@ body {
 
 h1 {
    color: darkmagenta;
-   font-size: 30px;
-   font-weight: 700;
+   font-size: var(--h1-font-size);
+   font-weight: var(--h-font-weight);
 }
 
 h2 {
-   font-size: 24px;
-   font-weight: 700;
+   font-size: var(--h2-font-size);
+   font-weight: var(--h-font-weight);
 }
 
 h3 {
-   font-size: 18px;
-   font-weight: 700;
+   font-size: var(--h3-font-size);
+   font-weight: var(--h-font-weight);
 }
 
 a {
-  color: #357b70;
+  color: var(--primary-color);
 }
 
 header {
    line-height: 1.8;
-   color: #008B8B;
+   color: var(--dark-cyan);
 }
 
 a:visited {
-   color: #008B8B;
+   color: var(--dark-cyan);
 }
 
 a:hover, a:focus {
@@ -49,7 +64,7 @@ a:hover, a:focus {
 }
 
 a:active {
-   color: #2b2b2b;
+   color: var(--dark-grey);
 }
 
 .social-media a{
@@ -103,6 +118,11 @@ a:active {
    text-align: right;
 }
 
+img.page-header__item {
+   width: auto;
+   height: 71px
+}
+
 .navigation-list {
    list-style-type: none;
 }
@@ -115,7 +135,7 @@ a:active {
 .about-page {
    text-align: center;
    line-height: 1.8;
-   font-size: 16px;
+   font-size: var(--p-font-size);
 }
 
 .navigation-list li {
@@ -148,7 +168,7 @@ a:active {
 }
 
 .grid__item {
-   background-color: #f5ecd5;
+   background-color: var(--off-white);
    padding: 10px;
    /* Set width to auto*/
    width: auto;
@@ -191,25 +211,25 @@ a:active {
 
 @-webkit-keyframes color-change {
    0% {
-      fill: #357b70;
+      fill: var(--primary-color);
    }
    50% {
-      fill: #e0b354;
+      fill: var(--secondary-color);
    }
    100% {
-      fill: #CD0030;
+      fill: var(--bright-color);
    }
 }
 
 @keyframes color-change {
    0% {
-      fill: #357b70;
+      fill: var(--primary-color);
    }
    50% {
-      fill: #e0b354;
+      fill: var(--secondary-color);
    }
    100% {
-      fill: #CD0030;
+      fill: var(--bright-color);
    }
 }
 
@@ -250,24 +270,32 @@ a:active {
 }
 
 @-webkit-keyframes letter-scale {
-   from {
+   0% {
       -webkit-transform: scale(0);
               transform: scale(0);
    }
-   to {
+   50% {
       -webkit-transform: scale(1.5);
               transform: scale(1.5);
+   }
+   100% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
    }
 }
 
 @keyframes letter-scale {
-   from {
+   0% {
       -webkit-transform: scale(0);
               transform: scale(0);
    }
-   to {
+   50% {
       -webkit-transform: scale(1.5);
               transform: scale(1.5);
+   }
+   100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
    }
 }
 
@@ -308,14 +336,14 @@ a:active {
 }
 
 /* .sun {
-animation-duration: 4s; 
+animation-duration: 4s;
 animation-name: color-change;
 animation-iteration-count: infinite;
 animation-direction: alternate;
 animation-timing-function: linear;
 } */
 
-.button {
+.button, button {
    /* overwrites browser defaults */
    /* resets the border */
    border: none;
@@ -323,27 +351,7 @@ animation-timing-function: linear;
    /* takes the font from the outer container */
    font-family: inherit;
    /* style button */
-   background-color: #357b70;
-   color: white;
-   text-decoration: none;
-   padding: 10px;
-   border-radius: 3px;
-   /* width of the border, type, color */
-   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-   -webkit-transition: 0.8s opacity;
-   -o-transition: 0.8s opacity;
-   transition: 0.8s opacity;
-}
-
-button {
-   /* overwrites browser defaults */
-   /* resets the border */
-   border: none;
-   display: inline-block;
-   /* takes the font from the outer container */
-   font-family: inherit;
-   /* style button */
-   background-color: #357b70;
+   background-color: var(--primary-color);
    color: white;
    text-decoration: none;
    padding: 10px;
