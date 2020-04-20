@@ -27,6 +27,67 @@ body {
    margin: 20px;
 }
 
+.name-header {
+   position: absolute;
+width: 590px;
+height: 228px;
+left: 120px;
+top: 109px;
+
+font-family: Helvetica;
+font-style: normal;
+font-weight: bold;
+font-size: 72px;
+line-height: 76px;
+}
+
+.card-title {
+color: black;
+padding-left: 312px;
+padding-top: 58px;
+font-family: Helvetica;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 52px;
+width: 692px;
+height: 104px;
+
+}
+ .card-text {
+   color: #000000;
+   padding-left: 312px;
+   font-family: Helvetica;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 32px;
+width: 1004px;
+height: 96px;
+
+ }
+
+ .card {
+   height: 322px;
+   top: 401px;
+   width: 1200px;
+   left: 120px;
+   border-top-color: black !important;
+   border-bottom-color: black !important;
+   border-right-width: 0px !important;
+   border-left-width: 0px !important;
+   border-radius: 0em !important;
+ }
+
+ .bi {
+    margin-left: 980px;
+    color: darkmagenta;
+ }
+
+ .bi:hover {
+    color: black;
+ }
+
 h1 {
    color: darkmagenta;
    font-size: var(--h1-font-size);
