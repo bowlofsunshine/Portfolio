@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Me</title>
+    <link rel="icon" type="image/png" href="favicomatic/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicomatic/favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+</head>
+
+<body>
+    <header class="page-header">
+        <!-- Add Logo here -->
+        <img src="img/logo.svg" alt="logo" class="page-header__item">
+        <nav class="main-navigation page-header__item">
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                    <a href="index.html" role="menuitem"
+                        class="navigation-list__item navigation-list__item--active">Home</a>
+                </li>
+                <li role="presentation">
+                    <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+                </li>
+                <li role="presentation">
+                    <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+                </li>
+                <li role="presentation">
+                    <a href="work.html" role="menuitem"
+                        class="navigation-list__item navigation-list__item--active">Work</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <h1>Contact Page</h1>
+    </div>
+    <div>
+        <a href="mailto:rachelgcaf@gmail.com">Email Me!</a>
+    </div><br>
+    <div>
+        <form method="post" id="contact-form">
+            <label class="standard-label" for="contact-email">Email: </label>
+            <input type="email" id="contact-email" required>
+
+            <label class="standard-label" for="contact-phone">Telephone: </label>
+            <input type="tel" id="contact-phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+
+            <label class="standard-label" for="contact-message">Message: </label>
+            <textarea maxlength="240" id="contact-message"></textarea>
+
+            <input type="submit" value="Send message">
+        </form>
+    </div>
+    <footer class="page-footer">
+        <p>Find me on</p>
+        <div class="social-media">
+            <!-- Github logo -->
+            <a href="http://github.com/bowlofsunshine" target="_blank">
+                <img src="img/github.svg" alt="github">
+            </a>
+            <!-- Twitter Icon -->
+            <a href="http://twitter.com" target="_blank">
+                <img src="img/twitter.svg" alt="twitter">
+            </a>
+            <!-- LinkedIn logo -->
+            <a href="https://www.linkedin.com/in/rachel-g-1243669b/" target="_blank">
+                <img src="img/linkedin.svg" alt="linkedin">
+            </a>
+        </div>
+    </footer>
+    <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>

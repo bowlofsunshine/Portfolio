@@ -54,6 +54,28 @@ width: 692px;
 height: 104px;
 
 }
+a {
+   padding: 16px;
+}
+.quiz {
+   flex: 2;
+   flex-direction: row;
+   display: flex;
+}
+.webimage {
+   height: 350px;
+   padding-bottom: 16px;
+   display: block;
+   margin: auto;
+   margin-top: -100px;
+}
+.video {
+   display: block;
+    margin: auto;
+    height: 350px;
+    margin-top: -100px;
+    padding-bottom: 16px;
+}
  .card-text {
    color: #000000;
    padding-left: 312px;
@@ -65,6 +87,18 @@ line-height: 32px;
 width: 1004px;
 height: 96px;
 
+ }
+ .contact-card {
+   height: 322px;
+   top: 401px;
+   width: 1200px;
+   left: 120px;
+   margin-top: 15em;
+   border-top-color: black !important;
+   border-bottom-color: black !important;
+   border-right-width: 0px !important;
+   border-left-width: 0px !important;
+   border-radius: 0em !important;
  }
 
  .card {
@@ -103,9 +137,11 @@ h3 {
    font-size: var(--h3-font-size);
    font-weight: var(--h-font-weight);
 }
-
+.email {
+   color: black;
+}
 a {
-  color: var(--primary-color);
+  color: var(--dark-grey);
 }
 
 header {
@@ -142,6 +178,16 @@ a:active {
    display: flex;
    flex-direction: column;
    text-align: center;
+   padding-top: 24px;
+}
+
+a.navigation-list__item {
+   color: black;
+   font-size: 24px;
+}
+
+a.navigation-list__item:hover {
+   color: darkmagenta;
 }
 
 .profile {
@@ -153,7 +199,7 @@ a:active {
    display: flex;
    width: 100%;
    padding: 20px;
-   border-bottom: 1px solid gray;
+   /* border-bottom: 1px solid gray; */
 }
 
 .page-header__item {
@@ -249,7 +295,7 @@ img.page-header__item {
 
 @keyframes color-change {
    0% {
-      fill: var(--primary-color);
+      fill: var(--dark-grey);
    }
    50% {
       fill: var(--secondary-color);
@@ -325,7 +371,7 @@ animation-timing-function: linear;
    /* takes the font from the outer container */
    font-family: inherit;
    /* style button */
-   background-color: var(--primary-color);
+   background-color: var(--dark-grey);
    color: white;
    text-decoration: none;
    padding: 10px;
@@ -363,6 +409,6 @@ button:focus,
 }
 
 .social-media img {
-   width: 30px;
-   height: 30px;
+   width: 50px;
+   height: 50px;
 }
